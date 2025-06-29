@@ -1,0 +1,188 @@
+# depslib dependency file v1.0
+1750346501 source:c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\colorbox.cpp
+	"ColorBox.h"
+
+1750346501 c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\colorbox.h
+	"Point.h"
+	"RGBColor.h"
+	"WinAdapt.h"
+
+1750168081 c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\point.h
+
+1750168081 c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\rgbcolor.h
+
+1750168081 c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\winadapt.h
+	"windows.h"
+	<gdk/gdk.h>
+
+1750168080 source:c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\complexgates.cpp
+	"testlevel.h"
+	"ComplexGates.h"
+
+1751206828 c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\testlevel.h
+
+1750168080 c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\complexgates.h
+	"LogicGate.h"
+	"Point.h"
+	"RGBColor.h"
+	"ColorBox.h"
+	<vector>
+
+1751207067 c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\logicgate.h
+	<string>
+	<vector>
+	"ColorBox.h"
+	"TextBox.h"
+	"WinAdapt.h"
+	"OutputSignal.h"
+	"InputSignal.h"
+	"testlevel.h"
+
+1750257983 c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\textbox.h
+	"ColorBox.h"
+	<string>
+
+1750168081 c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\outputsignal.h
+	"string"
+	"Point.h"
+	"TextBox.h"
+	"vector"
+
+1750168080 c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\inputsignal.h
+	"Point.h"
+	"ColorBox.h"
+
+1750168080 source:c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\inputsignal.cpp
+	"testlevel.h"
+	"InputSignal.h"
+	"LogicGate.h"
+	"LogicExceptions.h"
+
+1750168080 c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\logicexceptions.h
+	<exception>
+
+1750168080 source:c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\logicexceptions.cpp
+	<exception>
+	"LogicExceptions.h"
+
+1750168080 source:c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\logicgate.cpp
+	"testlevel.h"
+	<vector>
+	"LogicGate.h"
+	"RGBColor.h"
+	"InputSignal.h"
+	"LogicExceptions.h"
+
+1750168081 source:c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\main.cpp
+	<iostream>
+	<iomanip>
+	"WinAdapt.h"
+	"testlevel.h"
+	"Point.h"
+	"SwitchOnOff.h"
+	"SwitchToggle.h"
+	"Circuit.h"
+	"Oscillator.h"
+	"SimpleGates.h"
+	"ComplexGates.h"
+	"LogicGateSwitch.h"
+
+1750345803 c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\switchonoff.h
+	"Switch.h"
+	"TextBox.h"
+	<string>
+
+1750262054 c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\switch.h
+	"ColorBox.h"
+
+1750345803 c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\switchtoggle.h
+	"Switch.h"
+	"TextBox.h"
+	<string>
+
+1750168080 c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\circuit.h
+	<vector>
+	<string>
+	"Point.h"
+
+1750168081 c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\oscillator.h
+	"LogicGate.h"
+
+1750168081 c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\simplegates.h
+	"LogicGate.h"
+	"testlevel.h"
+
+1750168081 c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\logicgateswitch.h
+	"LogicGate.h"
+	"Switch.h"
+	"SwitchPulse.h"
+
+1750345803 c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\switchpulse.h
+	"Switch.h"
+	"TextBox.h"
+	<string>
+
+1750168081 source:c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\oscillator.cpp
+	"testlevel.h"
+	"Oscillator.h"
+
+1750168081 source:c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\outputsignal.cpp
+	"testlevel.h"
+	"OutputSignal.h"
+	"ColorBox.h"
+	"InputSignal.h"
+	"LogicGate.h"
+	"LogicExceptions.h"
+
+1750168081 source:c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\point.cpp
+	"Point.h"
+	<cmath>
+
+1750168081 source:c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\rgbcolor.cpp
+	"RGBColor.h"
+
+1750168081 source:c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\simplegates.cpp
+	"testlevel.h"
+	"SimpleGates.h"
+
+1750348039 source:c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\switch.cpp
+	"Switch.h"
+
+1750346989 source:c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\switchonoff.cpp
+	"SwitchOnOff.h"
+
+1750168080 source:c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\circuit.cpp
+	"testlevel.h"
+	"Circuit.h"
+	"Oscillator.h"
+	"LogicGateSwitch.h"
+	"LogicExceptions.h"
+
+1750168081 source:c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\logicgateswitch.cpp
+	"testlevel.h"
+	"LogicGateSwitch.h"
+	"SwitchOnOff.h"
+	"SwitchToggle.h"
+	"SwitchPulse.h"
+	"LogicExceptions.h"
+
+1750348442 source:c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\switchpulse.cpp
+	"SwitchPulse.h"
+
+1750348442 source:c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\switchtoggle.cpp
+	"SwitchToggle.h"
+
+1750348442 source:c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\textbox.cpp
+	"TextBox.h"
+
+1750168081 source:c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\winadapt.cpp
+	<windows.h>
+	<cstring>
+	"WinAdapt.h"
+	<stdlib.h>
+	<gtk/gtk.h>
+	<pango/pango.h>
+	"WinAdapt.h"
+	<time.h>
+	<thread>
+
