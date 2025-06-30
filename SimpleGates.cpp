@@ -4,8 +4,8 @@
 #if TEST_LEVEL >= TEST_SIMPLEGATES
 
 // NOT fertig
-LogicGateNOT::LogicGateNOT(const Point& Position, const string& ID)
-:LogicGate("NOT", Position, ID, 1)
+LogicGateNOT::LogicGateNOT(const Point& Position, const string& ID, unsigned NumInputs)
+    :LogicGate("NOT", Position, ID, NumInputs)
 {}
 
 void LogicGateNOT::updateOutput()
@@ -25,77 +25,71 @@ void LogicGateNOT::decorate() const
 
 
 // AND
-LogicGateAND::LogicGateAND(const Point& Position,const string& ID)
-:LogicGate("AND", Position, ID, 1)
+LogicGateAND::LogicGateAND(const Point& Position, const string& ID, unsigned NumInputs)
+    :LogicGate("AND", Position, ID, NumInputs)
 {}
 
 void LogicGateAND::updateOutput()
 {
-    setOutput(!Input[0].getState());
-}
-
-void LogicGateAND::decorate() const
-{
-    LogicGate::decorate();
-    FillCol(0,0,0);
-    Point LO(getPosition()+getSize().scaleXY(1.0,.5)+Point(0,-4));
-    Point RU(getPosition()+getSize().scaleXY(1.0,.5)+Point(8,4));
-    Elli(LO.X, LO.Y, RU.X, RU.Y);
+    bool result = true;
+    for(const auto& in : Input)
+        result = result && in.getState();
+    setOutput(result);
 }
 
 
 
 // OR
-LogicGateOR::LogicGateOR(const Point& Position, const string& ID)
-:LogicGate("OR", Position, ID, 1)
+LogicGateOR::LogicGateOR(const Point& Position, const string& ID, unsigned NumInputs)
+    :LogicGate("OR", Position, ID, NumInputs)
 {}
 
 void LogicGateOR::updateOutput()
 {
-    setOutput(!Input[0].getState());
-}
-
-void LogicGateOR::decorate() const
-{
-    LogicGate::decorate();
-    FillCol(0,0,0);
-    Point LO(getPosition()+getSize().scaleXY(1.0,.5)+Point(0,-4));
-    Point RU(getPosition()+getSize().scaleXY(1.0,.5)+Point(8,4));
-    Elli(LO.X, LO.Y, RU.X, RU.Y);
+    bool result = false;
+    for(const auto& in : Input)
+        result = result || in.getState();
+    setOutput(result);
 }
 
 
 
 // XOR
-LogicGateXOR::LogicGateXOR(const Point& Position,const string& ID)
-:LogicGate("XOR", Position, ID, 1)
+LogicGateXOR::LogicGateXOR(const Point& Position, const string& ID, unsigned NumInputs)
+    :LogicGate("XOR", Position, ID, NumInputs)
 {}
 
 void LogicGateXOR::updateOutput()
 {
-    setOutput(!Input[0].getState());
+    bool result = false;
+    for(const auto& in : Input)
+        result ^= in.getState();
+    setOutput(result);
 }
 
 void LogicGateXOR::decorate() const
 {
     LogicGate::decorate();
     FillCol(0,0,0);
-    Point LO(getPosition()+getSize().scaleXY(1.0,.5)+Point(0,-4));
-    Point RU(getPosition()+getSize().scaleXY(1.0,.5)+Point(8,4));
-    Elli(LO.X, LO.Y, RU.X, RU.Y);
+    Point LO(getPosition()+getSize().scaleXY(1.0,.5)+Point(-8,-3));
+    Point RU(getPosition()+getSize().scaleXY(1.0,.5)+Point(0,3));
+    Rect(LO.X+5, LO.Y-32, RU.X+3, RU.Y+32);
 }
 
 
 
 
 // NAND
-LogicGateNAND::LogicGateNAND(const Point& Position,const string& ID)
-:LogicGate("NAND", Position, ID, 1)
+LogicGateNAND::LogicGateNAND(const Point& Position, const string& ID, unsigned NumInputs)
+    :LogicGate("NAND", Position, ID, NumInputs)
 {}
 
 void LogicGateNAND::updateOutput()
 {
-    setOutput(!Input[0].getState());
+    bool result = true;
+    for(const auto& in : Input)
+        result = result && in.getState();
+    setOutput(!result);
 }
 
 void LogicGateNAND::decorate() const
