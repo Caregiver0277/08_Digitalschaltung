@@ -47,47 +47,71 @@ const string& LogicGate::getID() const
 
 void LogicGate::show() const
 {
-    void VtplPaint()
-    throw ExceptionFunctionNotImplemented();
+    Output.show();
+
+    Point My=getPosition();
+    for (auto Peer : Input)
+    {
+        Point PeerPosition=Peer.getPosition();
+        Point Mid((My + PeerPosition)/2);
+        Line(My.X, My.Y, Mid.X, My.Y);
+        Line(Mid.X, My.Y, Mid.X, PeerPosition.Y);
+        Line(Mid.X, PeerPosition.Y, PeerPosition.X, PeerPosition.Y);
+    }
+    ColorBox::show();
+
+    TextBox::show();
+    ::Text(getPosition().X+5, getPosition().Y+5, getID().c_str());
+    decorate();
+
+
 }
 
 void LogicGate::updateIndicator()
 {
-    throw ExceptionFunctionNotImplemented();
+    if (Output.getLastState() == false) Indicator.setColor(RGBColor(255,0,0));
+    if (Output.getLastState() == true) Indicator.setColor(RGBColor(0,128,0));
 }
 
 bool LogicGate::getOutput(unsigned Index) const
 {
-    throw ExceptionFunctionNotImplemented();
-    return false;
+    return Output.getLastState();
 }
 
 void LogicGate::setOutput(bool NewState, unsigned Port)
 {
-    throw ExceptionFunctionNotImplemented();
+    Output.sendState(NewState);
+    updateIndicator();
 }
 
 
-InputSignal& LogicGate::connectInput(OutputSignal& From,
-                                          bool CurrentState,
-                                          unsigned Index)
+InputSignal& LogicGate::connectInput(OutputSignal& From, bool CurrentState, unsigned Index)
 {
-    throw ExceptionFunctionNotImplemented();
+    if (Index > getNumInputs()) throw ExceptionIllegalInputChannel();
+
+    return Input[Index].connect(From, CurrentState);
 }
 
 void LogicGate::connectOutput(LogicGate& Peer, unsigned Index)
 {
-    throw ExceptionFunctionNotImplemented();
+    return Output.connectToConsumer(Peer, Index);
 }
 
 void LogicGate::decorate() const
 {
-    throw ExceptionFunctionNotImplemented();
+    Indicator.show();
 }
 
 void LogicGate::setPosition(const Point& Position)
 {
-    throw ExceptionFunctionNotImplemented();
+    Output.setPosition(Position);
+    Indicator.setPosition(Position);
+    for (unsigned int i=0; i<=getNumInputs(); i++)
+    {
+        Input[i].setPosition(Position);
+    }
+
+    positionElements();
 }
 
 void LogicGate::setSize(const Point& Size)
@@ -98,7 +122,20 @@ void LogicGate::setSize(const Point& Size)
 
 void LogicGate::positionElements()
 {
-    throw ExceptionFunctionNotImplemented();
+    Indicator.setPosition(getPosition()+getSize()-Point(15,15));
+
+    Point outPos(getPosition().X + getSize().X,
+                 getPosition().Y + getSize().Y/2 - Output.getSize().Y/2);
+    Output.setPosition(outPos);
+
+
+    double step=getSize().Y/(Input.size()+1);
+    for(size_t i=0;i<Input.size();++i)
+    {
+        Point pos(getPosition().X - Input[i].getSize().X,
+                   getPosition().Y + step*(i+1) - Input[i].getSize().Y/2);
+        Input[i].setPosition(pos);
+    }
 }
 
 #endif

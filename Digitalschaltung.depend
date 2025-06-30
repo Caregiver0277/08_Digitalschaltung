@@ -19,7 +19,7 @@
 	"testlevel.h"
 	"ComplexGates.h"
 
-1751206828 c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\testlevel.h
+1751279780 c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\testlevel.h
 
 1750168080 c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\complexgates.h
 	"LogicGate.h"
@@ -28,7 +28,7 @@
 	"ColorBox.h"
 	<vector>
 
-1751207067 c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\logicgate.h
+1751210631 c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\logicgate.h
 	<string>
 	<vector>
 	"ColorBox.h"
@@ -42,17 +42,17 @@
 	"ColorBox.h"
 	<string>
 
-1750168081 c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\outputsignal.h
+1751284142 c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\outputsignal.h
 	"string"
 	"Point.h"
 	"TextBox.h"
 	"vector"
 
-1750168080 c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\inputsignal.h
+1751211930 c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\inputsignal.h
 	"Point.h"
 	"ColorBox.h"
 
-1750168080 source:c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\inputsignal.cpp
+1751228733 source:c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\inputsignal.cpp
 	"testlevel.h"
 	"InputSignal.h"
 	"LogicGate.h"
@@ -65,7 +65,7 @@
 	<exception>
 	"LogicExceptions.h"
 
-1750168080 source:c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\logicgate.cpp
+1751226007 source:c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\logicgate.cpp
 	"testlevel.h"
 	<vector>
 	"LogicGate.h"
@@ -126,7 +126,7 @@
 	"testlevel.h"
 	"Oscillator.h"
 
-1750168081 source:c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\outputsignal.cpp
+1751284557 source:c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\outputsignal.cpp
 	"testlevel.h"
 	"OutputSignal.h"
 	"ColorBox.h"

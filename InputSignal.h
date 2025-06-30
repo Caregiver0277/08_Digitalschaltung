@@ -19,7 +19,7 @@ class InputSignal :public ColorBox
         InputSignal& connect(OutputSignal& From, bool InitialState);
         bool getState()const;
         bool isConnected()const;
-        //void show() const;
+        // void show() const;
 
     protected:
 

@@ -18,13 +18,13 @@ InputSignal::InputSignal(LogicGate& LocalGate,
 
 InputSignal::~InputSignal()
 {
-    throw ExceptionFunctionNotImplemented();
+    disconnectInput();
 }
 
 void InputSignal::setState(bool NewState)
 {
-    throw ExceptionFunctionNotImplemented();
-
+    State = NewState;
+    LocalGate.updateOutput();
 }
 
 bool InputSignal::getState() const
@@ -40,13 +40,18 @@ bool InputSignal::isConnected() const
 
 void InputSignal::disconnectInput()
 {
-    throw ExceptionFunctionNotImplemented();
+    RemoteOutput->disconnectConsumer(*this);
 }
 
-InputSignal& InputSignal::connect(OutputSignal& From,
-                                  bool InitialState)
+InputSignal& InputSignal::connect(OutputSignal& From, bool InitialState)
 {
-    throw ExceptionFunctionNotImplemented();
+    if (isConnected()== true) throw ExceptionInputConnected();
+
+    *RemoteOutput = From;
+    this->State = true;
+    setState(true);
+    LocalGate.updateOutput();
+    return *this;
 }
 
 #endif

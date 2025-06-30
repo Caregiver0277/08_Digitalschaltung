@@ -34,6 +34,9 @@ class LogicGate :public TextBox
         void connectOutput(LogicGate& Peer, unsigned Port=0);
         InputSignal& connectInput(OutputSignal& From, bool CurrentState, unsigned Port=0);
 
+        LogicGate(const LogicGate& orig)=delete;
+        LogicGate& operator=(const LogicGate& rhs)=delete;
+
     protected:
         virtual void decorate() const;
         void setOutput(bool NewState, unsigned Port=0);
