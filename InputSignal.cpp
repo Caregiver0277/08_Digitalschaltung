@@ -40,16 +40,22 @@ bool InputSignal::isConnected() const
 
 void InputSignal::disconnectInput()
 {
-    RemoteOutput->disconnectConsumer(*this);
+    if(!Connected)
+        return;
+    Connected = false;
+    OutputSignal* Remote = RemoteOutput;
+    RemoteOutput = nullptr;
+    if(Remote != nullptr)
+        Remote->disconnectConsumer(*this);
 }
 
 InputSignal& InputSignal::connect(OutputSignal& From, bool InitialState)
 {
     if (isConnected()== true) throw ExceptionInputConnected();
 
-    *RemoteOutput = From;
-    this->State = true;
-    setState(true);
+    RemoteOutput = &From;
+    Connected = true;
+    setState(InitialState);
     LocalGate.updateOutput();
     return *this;
 }

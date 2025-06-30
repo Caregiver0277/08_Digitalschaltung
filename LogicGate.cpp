@@ -48,22 +48,12 @@ const string& LogicGate::getID() const
 void LogicGate::show() const
 {
     Output.show();
-
-    Point My=getPosition();
-    for (auto Peer : Input)
-    {
-        Point PeerPosition=Peer.getPosition();
-        Point Mid((My + PeerPosition)/2);
-        Line(My.X, My.Y, Mid.X, My.Y);
-        Line(Mid.X, My.Y, Mid.X, PeerPosition.Y);
-        Line(Mid.X, PeerPosition.Y, PeerPosition.X, PeerPosition.Y);
-    }
-    ColorBox::show();
+    for(const auto& in : Input)
+        in.show();
 
     TextBox::show();
-    ::Text(getPosition().X+5, getPosition().Y+5, getID().c_str());
+    ::Text(getPosition().X+5, getPosition().Y+50, ID.c_str());
     decorate();
-
 
 }
 
@@ -87,14 +77,14 @@ void LogicGate::setOutput(bool NewState, unsigned Port)
 
 InputSignal& LogicGate::connectInput(OutputSignal& From, bool CurrentState, unsigned Index)
 {
-    if (Index > getNumInputs()) throw ExceptionIllegalInputChannel();
+    if (Index >= getNumInputs()) throw ExceptionIllegalInputChannel();
 
     return Input[Index].connect(From, CurrentState);
 }
 
 void LogicGate::connectOutput(LogicGate& Peer, unsigned Index)
 {
-    return Output.connectToConsumer(Peer, Index);
+    Output.connectToConsumer(Peer, Index);
 }
 
 void LogicGate::decorate() const

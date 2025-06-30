@@ -4,6 +4,7 @@
 #include "InputSignal.h"
 #include "LogicGate.h"
 #include "LogicExceptions.h"
+#include <algorithm>
 
 
 
@@ -24,16 +25,11 @@ OutputSignal::~OutputSignal()
 
 void OutputSignal::sendState(bool NewState)
 {
-    if(NewState != getLastState())
+    for(auto peer : FanOut)
     {
-        int i=0;
-        while(FanOut[i]->isConnected())
-        {
-            FanOut[i]->setState(NewState);
-            i++;
-        }
-    LastState=NewState;
+        peer->setState(NewState);
     }
+    LastState=NewState;
 }
 
 bool OutputSignal::getLastState() const

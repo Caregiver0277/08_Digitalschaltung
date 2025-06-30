@@ -19,7 +19,7 @@
 	"testlevel.h"
 	"ComplexGates.h"
 
-1751287826 c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\testlevel.h
+1751295691 c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\testlevel.h
 
 1750168080 c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\complexgates.h
 	"LogicGate.h"
@@ -28,7 +28,7 @@
 	"ColorBox.h"
 	<vector>
 
-1751210631 c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\logicgate.h
+1751293316 c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\logicgate.h
 	<string>
 	<vector>
 	"ColorBox.h"
@@ -52,7 +52,7 @@
 	"Point.h"
 	"ColorBox.h"
 
-1751228733 source:c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\inputsignal.cpp
+1751292503 source:c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\inputsignal.cpp
 	"testlevel.h"
 	"InputSignal.h"
 	"LogicGate.h"
@@ -65,7 +65,7 @@
 	<exception>
 	"LogicExceptions.h"
 
-1751226007 source:c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\logicgate.cpp
+1751295146 source:c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\logicgate.cpp
 	"testlevel.h"
 	<vector>
 	"LogicGate.h"
@@ -108,7 +108,7 @@
 1750168081 c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\oscillator.h
 	"LogicGate.h"
 
-1750168081 c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\simplegates.h
+1751296358 c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\simplegates.h
 	"LogicGate.h"
 	"testlevel.h"
 
@@ -126,13 +126,14 @@
 	"testlevel.h"
 	"Oscillator.h"
 
-1751287611 source:c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\outputsignal.cpp
+1751291768 source:c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\outputsignal.cpp
 	"testlevel.h"
 	"OutputSignal.h"
 	"ColorBox.h"
 	"InputSignal.h"
 	"LogicGate.h"
 	"LogicExceptions.h"
+	<algorithm>
 
 1750168081 source:c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\point.cpp
 	"Point.h"
@@ -141,7 +142,7 @@
 1750168081 source:c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\rgbcolor.cpp
 	"RGBColor.h"
 
-1750168081 source:c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\simplegates.cpp
+1751296165 source:c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\simplegates.cpp
 	"testlevel.h"
 	"SimpleGates.h"
 
