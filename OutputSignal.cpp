@@ -16,7 +16,10 @@ OutputSignal::OutputSignal(const Point& Position,
 
 OutputSignal::~OutputSignal()
 {
-    // später implementieren;
+    while(!FanOut.empty())
+    {
+        FanOut.back()->disconnectInput();
+    }
 }
 
 void OutputSignal::sendState(bool NewState)
@@ -40,19 +43,20 @@ bool OutputSignal::getLastState() const
 
 void OutputSignal::connectToConsumer(LogicGate& Consumer, unsigned Port)
 {
-    FanOut.emplace_back(&Consumer.connectInput(*this, getLastState(), Port));
+    FanOut.push_back(&Consumer.connectInput(*this, getLastState(), Port));
 }
 
 void OutputSignal::disconnectConsumer(InputSignal& Consumer)
 {
     Consumer.disconnectInput();
-    int i = 0;
-    while(FanOut[i] == Consumer)
+    for(auto it = FanOut.begin(); it != FanOut.end(); ++it)
     {
-        i++;
+        if(*it == &Consumer)
+        {
+            FanOut.erase(it);
+            break;
+        }
     }
-    if(FanOut[i]==Consumer) delete FanOut[i];
-
 }
 
 void OutputSignal::show() const
