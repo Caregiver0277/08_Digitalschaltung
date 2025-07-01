@@ -37,7 +37,7 @@ LogicGateSwitch::LogicGateSwitch(const string& Label, const Point& Position, con
 
 LogicGateSwitch::~LogicGateSwitch()
 {
-    if (SwitchElement!=nullptr) delete SwitchElement;
+  delete SwitchElement;
 }
 
 void LogicGateSwitch::updateOutput()
@@ -62,7 +62,11 @@ void LogicGateSwitch::decorate() const
 
 void LogicGateSwitch::clock()
 {
-    if(TimedSwitchElement != nullptr) TimedSwitchElement->onTimerTick();
+    if(TimedSwitchElement != nullptr)
+    {
+        TimedSwitchElement->onTimerTick();
+        setOutput(SwitchElement->getState());
+    }
 }
 
 

@@ -19,7 +19,7 @@
 	"testlevel.h"
 	"ComplexGates.h"
 
-1751373343 c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\testlevel.h
+1751380220 c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\testlevel.h
 
 1750168080 c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\complexgates.h
 	"LogicGate.h"
@@ -28,7 +28,7 @@
 	"ColorBox.h"
 	<vector>
 
-1751367098 c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\logicgate.h
+1751377910 c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\logicgate.h
 	<string>
 	<vector>
 	"ColorBox.h"
@@ -100,7 +100,7 @@
 	"TextBox.h"
 	<string>
 
-1750168080 c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\circuit.h
+1751380299 c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\circuit.h
 	<vector>
 	<string>
 	"Point.h"
@@ -152,14 +152,14 @@
 1750346989 source:c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\switchonoff.cpp
 	"SwitchOnOff.h"
 
-1750168080 source:c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\circuit.cpp
+1751380439 source:c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\circuit.cpp
 	"testlevel.h"
 	"Circuit.h"
 	"Oscillator.h"
 	"LogicGateSwitch.h"
 	"LogicExceptions.h"
 
-1751376432 source:c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\logicgateswitch.cpp
+1751376950 source:c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\logicgateswitch.cpp
 	"testlevel.h"
 	"LogicGateSwitch.h"
 	"SwitchOnOff.h"

@@ -14,7 +14,7 @@ using std::vector;
 
 class InputSignal;
 
-class LogicGate :public TextBox
+class LogicGate : public TextBox
 {
     public:
         LogicGate(const string & Operation,
