@@ -10,8 +10,7 @@
 
 Circuit::Circuit(double CrystalFrequency):CrystalFrequency(CrystalFrequency)
 {
-    Gates = {0};
-    Switches = {0};
+
 }
 
 Circuit::~Circuit()
@@ -36,7 +35,7 @@ Circuit::~Circuit()
 
     void Circuit::onMouse(const Point& where)
     {
-        for (unsigned i=0; i<=Switches.size(); i++)
+        for (unsigned i=0; i<Switches.size(); i++)
         {
             Switches[i]->onMouse(where);
         }
@@ -44,7 +43,7 @@ Circuit::~Circuit()
 
     void Circuit::clock()
     {
-        for (unsigned i=0; i<=Switches.size(); i++)
+        for (unsigned i=0; i<Switches.size(); i++)
         {
             Switches[i]->clock();
         }
@@ -52,7 +51,7 @@ Circuit::~Circuit()
 
     void Circuit::show()
     {
-        for (unsigned i=0; i<=Gates.size(); i++)
+        for (unsigned i=0; i<Gates.size(); i++)
         {
             Gates[i]->show();
         }
@@ -65,7 +64,7 @@ Circuit::~Circuit()
 
     LogicGate& Circuit::operator[](const string& ID) const
     {
-        for (unsigned i=0; i<=Gates.size(); i++)
+        for (unsigned i=0; i<Gates.size(); i++)
         {
             if (Gates[i]->getID() == ID) return *Gates[i];
             else continue;
