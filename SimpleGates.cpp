@@ -32,8 +32,14 @@ LogicGateAND::LogicGateAND(const Point& Position, const string& ID, unsigned Num
 void LogicGateAND::updateOutput()
 {
     bool result = true;
-    for(const auto& in : Input)
-        result = result && in.getState();
+    for(auto& i : Input)
+    {
+        if(!i.getState())
+            {
+                result=false;
+                break;
+            }
+    }
     setOutput(result);
 }
 
@@ -47,7 +53,7 @@ LogicGateOR::LogicGateOR(const Point& Position, const string& ID, unsigned NumIn
 void LogicGateOR::updateOutput()
 {
     bool result = false;
-    for(const auto& in : Input)
+    for(auto& in : Input)
         result = result || in.getState();
     setOutput(result);
 }
@@ -62,7 +68,7 @@ LogicGateXOR::LogicGateXOR(const Point& Position, const string& ID, unsigned Num
 void LogicGateXOR::updateOutput()
 {
     bool result = false;
-    for(const auto& in : Input)
+    for(auto& in : Input)
         result ^= in.getState();
     setOutput(result);
 }
@@ -87,7 +93,7 @@ LogicGateNAND::LogicGateNAND(const Point& Position, const string& ID, unsigned N
 void LogicGateNAND::updateOutput()
 {
     bool result = true;
-    for(const auto& in : Input)
+    for(auto& in : Input)
         result = result && in.getState();
     setOutput(!result);
 }

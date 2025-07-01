@@ -19,7 +19,7 @@
 	"testlevel.h"
 	"ComplexGates.h"
 
-1751295691 c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\testlevel.h
+1751373343 c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\testlevel.h
 
 1750168080 c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\complexgates.h
 	"LogicGate.h"
@@ -28,7 +28,7 @@
 	"ColorBox.h"
 	<vector>
 
-1751293316 c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\logicgate.h
+1751367098 c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\logicgate.h
 	<string>
 	<vector>
 	"ColorBox.h"
@@ -65,7 +65,7 @@
 	<exception>
 	"LogicExceptions.h"
 
-1751295146 source:c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\logicgate.cpp
+1751299758 source:c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\logicgate.cpp
 	"testlevel.h"
 	<vector>
 	"LogicGate.h"
@@ -108,11 +108,11 @@
 1750168081 c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\oscillator.h
 	"LogicGate.h"
 
-1751297636 c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\simplegates.h
+1751366773 c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\simplegates.h
 	"LogicGate.h"
 	"testlevel.h"
 
-1750168081 c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\logicgateswitch.h
+1751373592 c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\logicgateswitch.h
 	"LogicGate.h"
 	"Switch.h"
 	"SwitchPulse.h"
@@ -142,7 +142,7 @@
 1750168081 source:c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\rgbcolor.cpp
 	"RGBColor.h"
 
-1751298372 source:c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\simplegates.cpp
+1751300274 source:c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\simplegates.cpp
 	"testlevel.h"
 	"SimpleGates.h"
 
@@ -159,7 +159,7 @@
 	"LogicGateSwitch.h"
 	"LogicExceptions.h"
 
-1750168081 source:c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\logicgateswitch.cpp
+1751373592 source:c:\users\ichbi\desktop\theo\studium\2 semester\pin 2\aufgaben\pin2_s2025\08_digitalschaltung\logicgateswitch.cpp
 	"testlevel.h"
 	"LogicGateSwitch.h"
 	"SwitchOnOff.h"

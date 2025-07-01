@@ -6,44 +6,44 @@
 
 class LogicGateNOT : public LogicGate
 {
-    public:
-        LogicGateNOT(const Point& Position, const string& ID = "", unsigned NumInputs = 1);
-        virtual void updateOutput() override;
-        void decorate() const override;
+public:
+    LogicGateNOT(const Point& Position, const string& ID = "", unsigned NumInputs = 1);
+    virtual void updateOutput() override;
+    void decorate() const override;
 };
 
 
 class LogicGateAND : public LogicGate
 {
-    public:
-        LogicGateAND(const Point& Position, const string& ID = "", unsigned NumInputs = 2);
-        virtual void updateOutput() override;
+public:
+    LogicGateAND(const Point& Position, const string& ID = "", unsigned NumInputs = 2);
+    virtual void updateOutput() override;
 };
 
 
 class LogicGateOR : public LogicGate
 {
-    public:
-        LogicGateOR(const Point& Position, const string& ID = "", unsigned NumInputs = 2);
-        virtual void updateOutput() override;
+public:
+    LogicGateOR(const Point& Position, const string& ID = "", unsigned NumInputs = 2);
+    virtual void updateOutput() override;
 };
 
 
 class LogicGateXOR : public LogicGate
 {
-    public:
-        LogicGateXOR(const Point& Position, const string& ID = "", unsigned NumInputs = 2);
-        virtual void updateOutput() override;
-        void decorate() const override;
+public:
+    LogicGateXOR(const Point& Position, const string& ID = "", unsigned NumInputs = 2);
+    virtual void updateOutput() override;
+    void decorate() const override;
 };
 
 
 class LogicGateNAND : public LogicGate
 {
-    public:
-        LogicGateNAND(const Point& Position, const string& ID = "", unsigned NumInputs = 2);
-        virtual void updateOutput() override;
-        void decorate() const override;
+public:
+    LogicGateNAND(const Point& Position, const string& ID = "", unsigned NumInputs = 2);
+    virtual void updateOutput() override;
+    void decorate() const override;
 };
 
 

@@ -96,7 +96,7 @@ void LogicGate::setPosition(const Point& Position)
 {
     Output.setPosition(Position);
     Indicator.setPosition(Position);
-    for (unsigned int i=0; i<=getNumInputs(); i++)
+    for (unsigned int i=0; i<getNumInputs(); i++)
     {
         Input[i].setPosition(Position);
     }

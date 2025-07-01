@@ -27,7 +27,7 @@ class LogicGate :public TextBox
         virtual void setPosition(const Point& Position);
         virtual void setSize(const Point& Size);
         virtual void show() const;
-        virtual void updateOutput(){};
+        virtual void updateOutput()= 0;
         virtual bool getOutput(unsigned Port=0) const;
         unsigned getNumOutputs() const;
         unsigned getNumInputs() const ;
