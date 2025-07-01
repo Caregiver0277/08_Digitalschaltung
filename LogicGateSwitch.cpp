@@ -15,25 +15,24 @@ LogicGateSwitch::LogicGateSwitch(const string& Label, const Point& Position, con
 
     if (Type == 0)
     {
-        SwitchOnOff* ptr0 = new SwitchOnOff(Point(Position.X+70, Position.Y+3));
-        SwitchElement = ptr0;
+        SwitchElement = new SwitchOnOff(Point(Position.X+70, Position.Y+3));
     }
 
     else if (Type == 1)
     {
-        SwitchToggle* ptr1 = new SwitchToggle(Point(Position.X+70, Position.Y+3));
-        SwitchElement = ptr1;
+        SwitchElement = new SwitchToggle(Point(Position.X+70, Position.Y+3));
     }
 
     else if (Type == 2)
     {
-        SwitchPulse* ptr2 = new SwitchPulse(Point(Position.X+70, Position.Y+3));
+        auto* ptr2 = new SwitchPulse(Point(Position.X+70, Position.Y+3));
         SwitchElement = ptr2;
         TimedSwitchElement = ptr2;
     }
 
-    Point poi = SwitchElement->getSize();
-    this->Position = Point(poi.X+6, poi.Y+73);
+    Point size = SwitchElement->getSize();
+    setSize(Point(size.X + 73, size.Y + 6));
+
 }
 
 LogicGateSwitch::~LogicGateSwitch()
@@ -55,7 +54,7 @@ void LogicGateSwitch::onMouse(const Point& Where)
 }
 
 
-void LogicGateSwitch::decorate()
+void LogicGateSwitch::decorate() const
 {
     SwitchElement->show();
 }
@@ -63,7 +62,7 @@ void LogicGateSwitch::decorate()
 
 void LogicGateSwitch::clock()
 {
-    TimedSwitchElement->onTimerTick();
+    if(TimedSwitchElement != nullptr) TimedSwitchElement->onTimerTick();
 }
 
 

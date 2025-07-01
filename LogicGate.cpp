@@ -52,7 +52,7 @@ void LogicGate::show() const
         in.show();
 
     TextBox::show();
-    ::Text(getPosition().X+5, getPosition().Y+50, ID.c_str());
+    ::Text(getPosition().X+5, (getPosition().Y+getSize().Y)-20, ID.c_str());
     decorate();
 
 }
